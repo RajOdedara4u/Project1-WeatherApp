@@ -1,0 +1,199 @@
+/* STYLING FOR THE WEATHER-WEB-PAGE ----------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-color: #a8edfc;
+}
+
+/* --------------- HERO SEACTION ----------------- */
+.herosec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3abfff;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 30px rgba(171, 167, 167, 0.8);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* --------------- HERO SEACTION PART-1 ----------------- */
+.hdr {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.input1 {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 7px;
+  font-size: 1.2rem;
+  border: 0;
+}
+.srcbtn {
+  border-radius: 30px;
+  padding: 5px;
+  background-color: #3abfff;
+  border: 0;
+  margin-left: 15px;
+}
+.svg1 {
+  height: 25px;
+  width: 25px;
+}
+.dmy {
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* --------------- HERO SEACTION PART-2 ----------------- */
+.hm {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hm2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  color: white;
+}
+.mimg {
+  display: flex;
+  justify-content: center;
+}
+.img1 {
+  width: 60%;
+  margin: auto;
+}
+.tempr {
+  font-size: 7rem;
+}
+.slog {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* --------------- HERO SEACTION PART-3 ----------------- */
+.icons3 {
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  text-align: center;
+  padding: 5px;
+  flex-direction: row;
+}
+.tmpi {
+  height: 60px;
+  padding: 4px;
+}
+
+/* --------------- 3-DAY'S FORCAST ----------------- */
+div.forcast {
+  padding: 20px;
+}
+div.forcast1 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+div.forcast2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+div.forcast2 > div {
+  height: auto;
+  width: auto;
+  padding: 20px;
+  gap: 3px;
+  font-size: 1.2em;
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+div.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.box:nth-child(2) {
+  background-color: #3abfff;
+}
+div.box > img {
+  height: 130px;
+}
+
+/* --------------- MEDIA QUERYS FOR RESPONSIVE DESIGN... ----------------- */
+/* --------------- FIRST QUERY UNDER 350PX ----------------- */
+
+@media (max-width: 350px) {
+  .input1 {
+    padding: 4px;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+  .hm {
+    flex-direction: column;
+  }
+  .tempr {
+    font-size: 5rem;
+  }
+}
+
+/* --------------- SECOND QUERY UNDER 440PX ----------------- */
+
+@media (max-width: 440px) {
+  .icons3 {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 50px;
+    padding: 10px;
+  }
+}
+.tempr {
+  font-size: 5rem;
+}
+
+/* --------------- THIRD QUERY UNDER 8000PX ----------------- */
+
+@media (max-width: 800px) {
+  .hm {
+    flex-direction: column;
+  }
+  .hm2 {
+    align-items: center;
+  }
+  div.forcast2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  .dmy {
+    font-size: 0.9rem;
+  }
+}
