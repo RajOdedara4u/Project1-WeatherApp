@@ -7,6 +7,7 @@
     <p>
         This project is a weather website that displays current weather information based on user input. It fetches data from a weather API to show temperature, wind speed, and other relevant weather details for a specified area.
     </p>
+    <h2>Watch Project Live</h2> <a href="https://project1-weatherapp.netlify.app/">Live Link</a>
     <h2>Features</h2>
     <ul>
         <li>Displays current temperature in Celsius and Fahrenheit.</li>
